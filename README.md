@@ -4,9 +4,9 @@
 This project focuses on creating a dynamic and realistic AI guard system suitable for game environments. The guard is designed to patrol, guard, and chase based on specific conditions and triggers, enhancing player experience and interactions.
 
 ## Guard Behaviors:
-*Patrolling: The guard moves along a predefined path.
-*Guarding: Guard stands guard over an object in the environment.
-*Chasing: Guard chases the player if they come into its line of sight.
+* Patrolling: The guard moves along a predefined path.
+* Guarding: Guard stands guard over an object in the environment.
+* Chasing: Guard chases the player if they come into its line of sight.
 
 ## States Implementation:
 The behaviors are based on three states:
@@ -35,7 +35,7 @@ Logic is in place to toggle between patrol and guard states, with conditions set
 * Patrol State: The guard moves between patrol points based on an index. A random delay is incorporated between each point transition.
 * Chase State: The guard's speed increases, and it moves towards the player's last known location. If the player is out of sight, the guard waits momentarily before reverting to its previous state.
 
-## Behaviours:
+## Visual Behaviours:
 * Patrol Mode: When patrolling, the guard is oblivious to the player if out of its sight.
 * Chase Mode: As soon as the player is in its line of sight, the chase is on!
 * On Hit Effect: A Niagara VFX is instantiated when the guard's shield is hit, signaling the guard to initiate a chase.
